@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	l := LinkedList{}
-	l.PushFront("there").PushFront("Hello").PushFront("Your mom")
+	l.PushFront("there").PushFront("Hello")
 
 	l.Reverse()
 	fmt.Println(l.PopFront())
