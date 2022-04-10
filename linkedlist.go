@@ -32,6 +32,16 @@ func (l *LinkedList) PushFront(value string) *LinkedList {
 	return l
 }
 
+func (l *LinkedList) PopFront() string {
+	if l.head == nil {
+		return ""
+	}
+	value := l.head.value
+	l.head = l.head.next
+
+	return value
+}
+
 func (l LinkedList) ValueAt(index int) string {
 	n := l.head
 	for i := 0; i <= index; i++ {
